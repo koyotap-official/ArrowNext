@@ -32,14 +32,15 @@ This package contains static files for publishing the Arrow Puzzle privacy polic
 - Public repository: `https://github.com/koyotap-official/ArrowNext`
 - Expected GitHub Pages root: `https://koyotap-official.github.io/ArrowNext/`
 - Expected privacy policy URL: `https://koyotap-official.github.io/ArrowNext/privacy-policy.html`
-- Verification on 2026-05-31 JST: repository returned `200 OK`; expected privacy policy URL returned `404 Not Found`.
+- Published commit: `7b36cbaf079bc53818c747a27c9f52efbd0b973b`
+- Verification on 2026-05-31 JST: repository returned `200 OK`; expected privacy policy URL returned `404 Not Found`; the `Deploy Privacy Policy Pages` workflow failed at `Configure Pages`, and the GitHub Pages API returned `404`.
 
-The policy URL is not store-ready until the files in this folder are published to the repository or configured Pages branch and the expected privacy URL returns `200 OK`.
+The policy URL is not store-ready until GitHub Pages is enabled/configured and the expected privacy URL returns `200 OK`.
 
 ## Publish Handoff
 
-1. Copy all files in this folder into the public GitHub Pages repository or Pages branch.
-2. Enable GitHub Pages for that repository/branch.
+1. Enable GitHub Pages for the public repository with GitHub Actions as the source.
+2. Rerun the `Deploy Privacy Policy Pages` workflow or push a small commit after Pages is enabled.
 3. Verify that the final URL serves `privacy-policy.html` publicly without authentication or geo-blocking.
 4. Run the follow-up PM task for resolving `human.privacy_policy_url` with the verified URL, owner, and publish timing.
 
