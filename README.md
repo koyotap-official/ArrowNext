@@ -35,7 +35,7 @@ This package contains static files for publishing the Arrow Next privacy policy 
 - Expected privacy policy URL: `https://koyotap-official.github.io/ArrowNext/privacy-policy.html`
 - Initial policy commit: `7b36cbaf079bc53818c747a27c9f52efbd0b973b`
 - Latest branch-deploy cleanup commit: `416fae54da7614605bf3a1f6832f1fd688754cda`
-- Latest production-policy content commit: pending publish
+- Latest production-policy content commit: `fdc3f6019f6c112fbfefaa0bb22e86a021b92039`
 - Verification on 2026-05-31 JST: repository returned `200 OK`; expected privacy policy URL returned `200 OK`. No GitHub Actions workflow is required for this one-time static policy page.
 
 The policy URL is store-ready as a hosted URL. Policy content must still be kept aligned with the exact live ads, real-money IAP, analytics, diagnostics, cloud save, account, or platform achievement integrations enabled in the submitted build.
