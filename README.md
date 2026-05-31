@@ -1,6 +1,6 @@
-# Arrow Puzzle Privacy Policy GitHub Pages Package
+# Arrow Next Privacy Policy GitHub Pages Package
 
-This package contains static files for publishing the Arrow Puzzle privacy policy from a public GitHub Pages repository. It is a draft package until a human or PM publishes it and records the final public URL.
+This package contains static files for publishing the Arrow Next privacy policy from a public GitHub Pages repository. The current public URL is verified for store metadata use.
 
 ## Files
 
@@ -14,35 +14,36 @@ This package contains static files for publishing the Arrow Puzzle privacy polic
 ## Evidence Used
 
 - Support contact is `g1854003@gmail.com`.
-- `Assets/ArrowPuzzle/Compliance/MVP/privacy_consent_text.csv` states progress/settings are stored on device and ads, purchases, and achievements are stubbed.
-- `Assets/ArrowPuzzle/Compliance/MVP/sdk_disclosure_matrix.csv` marks local save as implemented and ads, purchases, restore, and achievements as stub states.
-- `Assets/ArrowPuzzle/Operations/MVP/crash_log_policy.tsv` states no crash SDK is connected in the MVP seed.
+- `ProjectSettings/ProjectSettings.asset` sets product name to `Arrow Next` and company name to `KoyoTap`.
+- `Assets/ArrowPuzzle/Compliance/MVP/privacy_consent_text.csv` states progress/settings are stored on device.
+- `Assets/ArrowPuzzle/Compliance/MVP/sdk_disclosure_matrix.csv` records the published privacy policy URL.
+- `Assets/ArrowPuzzle/Operations/MVP/OPERATIONS_INDEX.md` states Firebase Analytics logging is enabled only when the Firebase sink, define, and SDK are present, and AdMob is enabled only when the AdMob client, define, and Google Mobile Ads plugin are present.
 - `Assets/ArrowPuzzle/Scripts/Runtime/Feature/Common/Services/SaveDataRepository.cs` and `SaveData.cs` show local progress/settings/onboarding/purchase/ad-count/achievement state stored through local save data.
-- Service defaults use local stubs or null sinks when live ad/analytics clients are not registered.
+- `Assets/ArrowPuzzle/Scripts/Runtime/Feature/Common/Services/AdMobAdNetworkClient.cs` and `FirebaseAnonymousAnalyticsSink.cs` show production-facing adapters for ads and analytics when enabled.
 
 ## Assumptions
 
-- This policy describes the current public MVP build only.
-- Live third-party ads, real-money IAP, external achievement services, analytics SDKs, crash SDKs, cloud save, and account sign-in are not release-connected for this policy package.
-- Local ad-removal, ad-count, and achievement state are treated as on-device game state, not as proof of live third-party services.
-- The final public privacy policy URL is still pending and must not be marked resolved until the package is published and verified.
+- This policy is production-facing and covers the expected public app scope: local save data, ads, in-app purchases, analytics/diagnostics, store platforms, and support.
+- The app does not currently require a KoyoTap account or cloud save.
+- Store Data Safety and App Privacy answers must still be matched to the exact SDKs and platform services enabled in the submitted build.
+- The final public privacy policy URL is published and verified as `https://koyotap-official.github.io/ArrowNext/privacy-policy.html`.
 
 ## Publish Target
 
 - Public repository: `https://github.com/koyotap-official/ArrowNext`
 - Expected GitHub Pages root: `https://koyotap-official.github.io/ArrowNext/`
 - Expected privacy policy URL: `https://koyotap-official.github.io/ArrowNext/privacy-policy.html`
-- Published commit: `7b36cbaf079bc53818c747a27c9f52efbd0b973b`
-- Verification on 2026-05-31 JST: repository returned `200 OK`; expected privacy policy URL returned `404 Not Found`. No GitHub Actions workflow is required for this one-time static policy page.
+- Initial policy commit: `7b36cbaf079bc53818c747a27c9f52efbd0b973b`
+- Latest branch-deploy cleanup commit: `416fae54da7614605bf3a1f6832f1fd688754cda`
+- Latest production-policy content commit: pending publish
+- Verification on 2026-05-31 JST: repository returned `200 OK`; expected privacy policy URL returned `200 OK`. No GitHub Actions workflow is required for this one-time static policy page.
 
-The policy URL is not store-ready until GitHub Pages is enabled from the `main` branch root and the expected privacy URL returns `200 OK`.
+The policy URL is store-ready as a hosted URL. Policy content must still be kept aligned with the exact live ads, real-money IAP, analytics, diagnostics, cloud save, account, or platform achievement integrations enabled in the submitted build.
 
 ## Publish Handoff
 
-1. Open repository Settings -> Pages.
-2. Set Source to `Deploy from a branch`.
-3. Select branch `main` and folder `/ (root)`, then save.
-4. Verify that the final URL serves `privacy-policy.html` publicly without authentication or geo-blocking.
-5. Run the follow-up PM task for resolving `human.privacy_policy_url` with the verified URL, owner, and publish timing.
+1. Use `https://koyotap-official.github.io/ArrowNext/privacy-policy.html` in store metadata and release checklists.
+2. Keep `privacy-policy.md` and `privacy-policy.html` aligned when SDK/provider or real IAP scope changes.
+3. Re-verify that the final URL serves `privacy-policy.html` publicly without authentication or geo-blocking before store submission.
 
-Do not update store privacy disclosures to claim live ads, purchases, analytics, crash reporting, cloud save, or platform achievements unless those services are actually connected and reviewed.
+Do not update store privacy disclosures to claim a specific provider or data type unless that provider or data handling is actually connected and reviewed for the submitted build.
