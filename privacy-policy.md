@@ -4,7 +4,7 @@ Last updated: May 31, 2026
 
 This Privacy Policy explains how KoyoTap handles information for Arrow Next, a mobile puzzle game. It applies to the production app distributed through app stores and to the public privacy policy URL used in store listings.
 
-For privacy questions or support, contact: g1854003@gmail.com
+For privacy questions or support, contact: koyotap.official@gmail.com
 
 ## Summary
 
@@ -82,7 +82,7 @@ Third-party services process information under their own privacy policies. Their
 
 ## Children's Privacy
 
-Arrow Next is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided personal information through a support request or another channel, contact g1854003@gmail.com so we can review and, where appropriate, delete the information.
+Arrow Next is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided personal information through a support request or another channel, contact koyotap.official@gmail.com so we can review and, where appropriate, delete the information.
 
 If the app is configured for child-directed treatment in a particular store, region, or release, ad and analytics behavior must be configured to comply with applicable child privacy requirements before that release is published.
 
@@ -90,7 +90,7 @@ If the app is configured for child-directed treatment in a particular store, reg
 
 Local progress and settings remain on your device until you delete the app, clear app data, or use an available reset feature.
 
-Support emails are kept only as long as reasonably needed for support, record keeping, issue follow-up, legal compliance, and abuse prevention. You may contact g1854003@gmail.com to request deletion of support email records associated with your request, subject to any legal or operational need to retain limited records.
+Support emails are kept only as long as reasonably needed for support, record keeping, issue follow-up, legal compliance, and abuse prevention. You may contact koyotap.official@gmail.com to request deletion of support email records associated with your request, subject to any legal or operational need to retain limited records.
 
 Ad, analytics, diagnostics, purchase, and store records may be retained by the relevant third-party providers according to their own policies and your account or device settings. You can also use platform controls such as app permissions, advertising ID reset or deletion, tracking settings, and store account privacy settings where available.
 
@@ -120,4 +120,4 @@ Material changes should be reflected in the app store privacy disclosures and, w
 
 For privacy questions or support, contact:
 
-g1854003@gmail.com
+koyotap.official@gmail.com

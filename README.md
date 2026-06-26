@@ -14,7 +14,7 @@ This package contains static files for publishing Arrow Next store compliance fi
 
 ## Evidence Used
 
-- Support contact is `g1854003@gmail.com`.
+- Support contact is `koyotap.official@gmail.com`.
 - `ProjectSettings/ProjectSettings.asset` sets product name to `Arrow Next` and company name to `KoyoTap`.
 - `Assets/ArrowPuzzle/Compliance/MVP/privacy_consent_text.csv` states progress/settings are stored on device.
 - `Assets/ArrowPuzzle/Compliance/MVP/sdk_disclosure_matrix.csv` records the published privacy policy URL.
